@@ -1,38 +1,63 @@
+:root {
+ --main-color: #f6ff0a; 
+}
+
+body {
+  background-image: url('./cashier.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .App {
+  width: 100vw;
+  height: 90vh;
+}
+
+header {
+  width: 100%;
+  padding: 20px 0;
+  box-shadow: 2px 5px 10px rgb(98, 132, 168);
+  background-color: black;
   text-align: center;
+  font-size: 3em;
+  color: white;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  gap: 8vh;
 }
 
-.App-link {
-  color: #61dafb;
+.charge {
+  font-size: 5em;
+  color: var(--main-color);
+  font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cash {
+  font-size: 4em;
+  color: var(--main-color);
+  font-weight: 400;
+}
+
+button {
+  color: var(--main-color);
+  font-size: 3em;
+  border: 5px solid var(--main-color);
+  padding: 10px 20px;
+  background-color: #8a2be2;
+  border-radius: 35px;
+}
+
+.counter {
+  color: rgb(134, 255, 68);
+  font-size: 2em;
+  position: absolute;
+  top: 13%;
+  right: 5px;
 }
